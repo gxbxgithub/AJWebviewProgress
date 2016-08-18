@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="dm5-wZ-Kei">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="http://www.baidu.com" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VYW-9i-ET6">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="197" id="C0n-IF-qHZ"/>
+                                    <constraint firstAttribute="height" constant="30" id="lGe-MB-1Al"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="C0n-IF-qHZ"/>
+                                        <exclude reference="lGe-MB-1Al"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="C0n-IF-qHZ"/>
+                                        <include reference="lGe-MB-1Al"/>
+                                    </mask>
+                                </variation>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pyn-hR-qBz">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="107" id="0Fl-fk-WyQ"/>
+                                    <constraint firstAttribute="height" constant="48" id="mRu-sc-uDQ"/>
+                                </constraints>
+                                <state key="normal" title="进入"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="0Fl-fk-WyQ"/>
+                                        <exclude reference="mRu-sc-uDQ"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="0Fl-fk-WyQ"/>
+                                        <include reference="mRu-sc-uDQ"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="enter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bXQ-sb-cqo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="VYW-9i-ET6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9H5-bo-Wxz"/>
+                            <constraint firstItem="Pyn-hR-qBz" firstAttribute="centerX" secondItem="VYW-9i-ET6" secondAttribute="centerX" id="lNO-fh-gOT"/>
+                            <constraint firstItem="Pyn-hR-qBz" firstAttribute="top" secondItem="VYW-9i-ET6" secondAttribute="bottom" constant="66" id="tun-w0-tPd"/>
+                            <constraint firstItem="VYW-9i-ET6" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="90" id="wi1-Q9-xcp"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="VYW-9i-ET6"/>
+                                <exclude reference="Pyn-hR-qBz"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="9H5-bo-Wxz"/>
+                                <exclude reference="wi1-Q9-xcp"/>
+                                <exclude reference="lNO-fh-gOT"/>
+                                <exclude reference="tun-w0-tPd"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="VYW-9i-ET6"/>
+                                <include reference="Pyn-hR-qBz"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="9H5-bo-Wxz"/>
+                                <include reference="wi1-Q9-xcp"/>
+                                <include reference="lNO-fh-gOT"/>
+                                <include reference="tun-w0-tPd"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="POK-T9-Bq6"/>
+                    <connections>
+                        <outlet property="tf_url" destination="VYW-9i-ET6" id="RNk-E2-Vrj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1222.5" y="356.25"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="6am-a1-k06">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dm5-wZ-Kei" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="WiV-2F-KAn">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="MJm-q2-SBT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m92-hw-ZvV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="546" y="356.25"/>
+        </scene>
+    </scenes>
+</document>
