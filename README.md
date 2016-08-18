@@ -1,4 +1,4 @@
 AJWebviewProgress
 ---
 
-<img src="screen.gif" width="200" />
+<img src="https://github.com/gxbxgithub/AJWebviewProgress/screen.gif" width="200" />
